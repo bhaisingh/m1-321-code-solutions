@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(59, 147, 230);
+  color: white;
+  padding: 5%;
+}
+
+h2 {
+  text-align: right;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.column-one-third {
+  width: 33%;
+  font-size: 12px;
+  padding: 1%;
+}
+
+.column-round-third {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 60%;
+  margin: auto;
+}
