@@ -1,6 +1,6 @@
 // Student Object
 
-var StudentObj = {
+var studentObj = {
   firstname: 'Rakesh',
   lastName: 'Singh',
   age: 49
@@ -8,7 +8,7 @@ var StudentObj = {
 
 var student = {};
 
-student = StudentObj;
+student = studentObj;
 
 var fullName;
 fullName = student.firstname + ' ' + student.lastName;
@@ -22,14 +22,14 @@ console.log('value of student: ', student);
 
 // vehicle Object
 
-var VehicleObj = {
+var vehicleObj = {
   make: 'Ford',
   model: 'F150',
   year: 2016
 };
 
 var vehicle = {};
-vehicle = VehicleObj;
+vehicle = vehicleObj;
 
 vehicle['color'] = 'Steel Blue';
 vehicle['isConvertible'] = false;
@@ -39,13 +39,13 @@ console.log('value of vehicle: ', vehicle);
 
 // pet Object
 
-var PetObj = {
+var petObj = {
   name: 'Messi',
   type: 'Labrador'
 };
 
 var pet = {};
-pet = PetObj;
+pet = petObj;
 
 delete pet.name;
 delete pet.type;
