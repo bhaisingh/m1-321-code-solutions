@@ -1,0 +1,92 @@
+h2 {
+  color: rgb(241, 94, 68);
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+label {
+  font-size: 10px;
+  padding: 10px;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+button {
+  background-color: rgba(223, 51, 20, 0.747);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.d-block {
+  display: block;
+}
+
+#name {
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+#email {
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+#whire {
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+#hhire {
+  border-radius: 5px;
+  height: 30px;
+  background-color: rgb(250, 247, 244);
+  border: 1px solid gainsboro;
+}
+
+::placeholder {
+  color: rgb(192, 188, 188);
+}
