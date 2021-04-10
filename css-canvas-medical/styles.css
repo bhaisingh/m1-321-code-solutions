@@ -128,18 +128,18 @@ body {
 .clinic-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .clinics-1 {
   margin: 40px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .clinics-2 {
   margin: 40px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .learn-more-container {
