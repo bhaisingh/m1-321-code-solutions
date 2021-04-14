@@ -1,0 +1,246 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgb(239, 239, 239, 0.5);
+  color: #808080;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1pt solid;
+  border-color: rgb(243, 235, 224);
+}
+
+.logo-container img {
+  width: 100px;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-item button {
+  background-color: rgba(0, 37, 75, 0.9);
+  text-align: center;
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(239, 239, 239, 0.8);
+  border-radius: 5px;
+}
+
+.hero-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+.hero-image {
+  filter: brightness(80%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text-container {
+  position: absolute;
+  color: rgb(239, 239, 239, 0.8);
+  padding: 20px;
+  margin: 15px;
+  width: 35%;
+}
+
+.hero-text-container h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hero-text-container p {
+  font-size: 1em;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.hero-text-container button {
+  background-color: #0d2c4c;
+  text-align: center;
+  padding: 20px 40px;
+  color: rgb(239, 239, 239, 0.8);
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(239, 239, 239, 0.7);
+  border-bottom: 1pt solid;
+  border-color: rgb(243, 235, 224);
+}
+
+.title-container {
+  text-align: center;
+  max-width: 40%;
+}
+
+.title-container h3 {
+  font-size: 20px;
+}
+
+.clinic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.clinics-1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.clinics-2 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.learn-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ready-text-container {
+  width: 50%;
+}
+
+.ready-text-container h3 {
+  font-size: 30px;
+}
+
+.ready-button-container {
+  width: 50%;
+}
+
+.ready-text-container p {
+  font-size: 16px;
+}
+
+.get-button-container button {
+  background-color: rgba(0, 37, 75, 0.9);
+  text-align: center;
+  display: inline-block;
+  padding: 18px 42px;
+  color: rgb(239, 239, 239, 0.8);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dark-footer-container {
+  display: flex;
+  background-color: #555;
+  color: rgb(239, 239, 239, 0.7);
+  width: 100%;
+  padding: 5%;
+  justify-content: space-between;
+}
+
+.address-container {
+  width: 50%;
+}
+
+.address-container h1 {
+  font-size: 40px;
+  font-family: 'Tiempos Headline', sans-serif;
+  padding: 5px;
+}
+
+.address-container address {
+  font-style: normal;
+  font-family: 'Avenir', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.company-product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.company p {
+  padding: 25px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.company ul li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.product p {
+  padding: 30px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.product ul li {
+  list-style-type: none;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.footer-container ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-container ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
