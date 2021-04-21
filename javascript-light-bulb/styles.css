@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.outer-color-on {
+  background-color: beige;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 25em;
+  height: 25em;
+  margin: 300px;
+}
+
+.circle-color-on {
+  background-color: #eef663;
+}
+
+.outer-color-off {
+  background-color: black;
+}
+
+.circle-color-off {
+  background-color: rgb(27, 27, 27);
+}
