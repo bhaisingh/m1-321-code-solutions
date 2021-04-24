@@ -1,0 +1,24 @@
+
+div {
+  padding: 420px;
+}
+
+span {
+  font-size: 40px;
+  color: black;
+  font-weight: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+}
+
+.letter.correct {
+  color: rgb(19, 241, 19);
+}
+
+.letter.wrong {
+  color: red;
+}
+
+.border {
+  border-bottom: 5px solid;
+}
