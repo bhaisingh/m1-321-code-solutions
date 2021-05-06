@@ -13,7 +13,6 @@ function buildDeck() {
       cardDeck.push({ suit, rank });
     }
   }
-  console.log(cardDeck);
   return cardDeck;
 }
 
@@ -24,7 +23,6 @@ function shuffleDeck(cardDeck) {
     cardDeck[i] = cardDeck[j];
     cardDeck[j] = temp;
   }
-  console.log(cardDeck);
   return cardDeck;
 }
 
@@ -34,20 +32,45 @@ function addPlayer(player) {
     var name = player[i];
     outPlayer.push({ name });
   }
-  console.log(outPlayer);
   return outPlayer;
 }
 
 function dealCards(player, noOfCards) {
-  var cardDelt = [];
+  var value = 0;
   var k = 0;
   for (var i = 0; i < noOfCards; i++) {
     for (var j = 0; j < player.length; j++) {
-      cardDelt.push([cardDeck[k]]);
+      if (cardDeck[k].rank === 'A') {
+        value = 11;
+      } else if (cardDeck[k].rank === 'J' ||
+            cardDeck[k].rank === 'Q' ||
+            cardDeck[k].rank === 'K') {
+        value = 10;
+      } else {
+        value = parseInt(cardDeck[k].rank, 10);
+      }
+
+      if (i === 0) {
+        player[j].score = value;
+      } else {
+        player[j].score += value;
+      }
       k += 1;
     }
   }
+  var winnerName = '';
+  var winnerScore = 0;
+  for (i = 0; i < player.length; i++) {
+    if (i === 0) {
+      winnerName = player[i].name;
+      winnerScore = player[i].score;
+    } else if (winnerScore < player[i].score) {
+      winnerName = player[i].name;
+      winnerScore = player[i].score;
+    }
+  }
 
+  console.log('And the winner is: ' + winnerName + ' with a score of: ' + winnerScore);
 }
 
 function play(player, noOfCards) {
@@ -59,4 +82,8 @@ function play(player, noOfCards) {
   }
 }
 
-play();
+play(['Rakesh', 'spongebob', 'patrick'], 2);
+
+play(['Rakesh', 'spongebob', 'patrick'], 4);
+
+play(['Rakesh', 'spongebob', 'patrick', 'Sandy', 'Mr. Crabs'], 2);
