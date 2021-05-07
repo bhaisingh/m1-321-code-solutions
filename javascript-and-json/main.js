@@ -10,6 +10,7 @@ for (var i = 0; i < books.length; i++) {
   var isbn = isbns[i];
   bookShelf.push({ title, author, isbn });
 }
+
 console.log('Book Array: ', bookShelf);
 console.log('Books Array type: ', typeof bookShelf);
 
